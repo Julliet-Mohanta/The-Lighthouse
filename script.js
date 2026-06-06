@@ -287,6 +287,7 @@ function handleFormSubmit(e) {
     // Reset form after delay
     setTimeout(() => {
       reservationForm.reset();
+      updateAvailableTimes();
       submitBtn.textContent = originalText;
       submitBtn.style.backgroundColor = "";
       submitBtn.disabled = false;
